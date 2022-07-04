@@ -1,0 +1,16 @@
+body {background: linear-gradient(90deg, rgba(37,36,36,1) 0%, rgba(126,4,4,1) 72%, rgba(203,64,0,1) 100%);}
+
+#title {border-style: solid; border-width: 10px; padding: 1cm; font-family: Arial, Helvetica, sans-serif; font-size: 64px; color: white; text-align: center;}
+
+.drpbutton { background-color: aliceblue; color: black; padding-left: 2cm; padding-right: 2cm; padding-top: 1cm; padding-bottom: 1cm; text-align: center; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+
+.dropbutton {position: relative; display: inline-block;}
+
+.dropbutton_content {position: absolute; display: none; }
+
+.dropbutton_content a {color: black; padding: 10PX; text-decoration: none; display: block; background-color: aliceblue; color: black; padding-left: 2cm; padding-right: 2cm; padding-top: 1cm; padding-bottom: 1cm; text-align: center; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+
+.dropbutton:hover .dropbutton_content {display: block;}
+
+
+.dropbutton_content a:hover {background-color: #bb1313;}

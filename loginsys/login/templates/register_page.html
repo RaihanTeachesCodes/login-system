@@ -1,0 +1,13 @@
+<h1>register page</h1>
+
+<form text-align="center" action="register_process/" method="post">
+{% csrf_token %}
+    new username: <br>
+<input name="nuser">
+<br> <br>
+new password: <br>
+<input name="npassword"> 
+<br><br>
+<input type="submit" value="submit">
+<br>    
+</form>
