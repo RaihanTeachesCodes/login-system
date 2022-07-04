@@ -42,19 +42,18 @@ def detection(request):
         else:
             login = False
 
-    
-
     if login:
         return HttpResponse(correct_template.render(context, request))
     else:
         return HttpResponse(wrong_template.render({}, request))
 
-def main_app(request):
+def main_app(request, id):
     template3= loader.get_template("main_screen.html")
-
-    return HttpResponse(template3.render({}, request))
+    CONTEXT = {
+        "id_check2": str(id)
+    }
+    return HttpResponse(template3.render(CONTEXT, request))
     
-
 def register_page(request):
     template2 = loader.get_template("register_page.html")
     return HttpResponse(template2.render({}, request))
